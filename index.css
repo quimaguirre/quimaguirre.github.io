@@ -1,0 +1,91 @@
+body {
+    /*background: #cdf6ff;*/
+    /*color: #04525c;*/
+    /*color: #255112;*/
+    background: #ffffff;
+    color: #022c46;
+    font-family: Roboto;
+    font-style: normal;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+a {
+    color: #022c46;
+    text-decoration: none;
+}
+
+.navbar.is-stardew {
+    /*background: #cbfdb8;*/
+    background: #ec3101;
+}
+
+#navbarMenu {
+    font-size: 1.11rem;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: Roboto;
+    font-style: normal;
+}
+
+#navbarMenu .is-active {
+    color: #ffffff;
+    hover-color: #273643:
+}
+.footer{
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+#title-text{
+
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 150%;
+
+}
+
+#main-text1{
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 150%;
+
+}
+
+#main-text2{
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+
+}
+
+.links{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    list-style: none;
+}
+
+.icon_symbol{
+    margin-right: 0;
+    font-size: 20px;
+}
+
+.arr { 
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.location{
+    font-size: 20px;
+
+}
+

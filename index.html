@@ -15,39 +15,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Link to Bulma CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- Link to personalized CSS -->
+    <link rel="stylesheet" href="index.css">
     <!-- Link to additional font libraries-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5be75c64a1.js" crossorigin="anonymous"></script>
     <!-- Link to icon of the website -->
     <link rel="icon" 
-      type="image/png" 
-      href="icon.png">
+      type="image/svg" 
+      href="images/icon-blue.svg">
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar is-info">
+        <!-- Left part of the navbar -->
+        <div class="navbar-brand">
+            <!-- Icon -->
+            <a class="navbar-item" href="">
+                <img src="images/icon-white.svg" width="28" height="28">
+            </a>
+            <!-- Hamburger icon, which toggles the navbar menu on touch devices -->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>        
+        </div>        
         <div class="container">
+            <!-- Options of the navbar -->
             <div id="navbarMenu" class="navbar-menu">
+                <!-- Make that the options appear on the right part (using navbar-end) -->
                 <div class="navbar-end">
-                    <div class="tabs is-right">
-                        <ul>
-                            <li class="is-active"><a>Home</a></li>
-                            <li><a href="">Projects</a></li>
-                            <li><a href="">Publications</a></li>
-                        </ul>
-                    </div>
+                    <a href="" class="navbar-item is-active">
+                        Home
+                    </a>
+                    <a href="about.html" class="navbar-item">
+                        About
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=9Oxu-5wAAAAJ&hl" target="_blank" class="navbar-item">
+                        Publications
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
 
     <section class="section">
-        <div class="container">
-            <p class="left-a" id="title-text">Joaquim Aguirre-Plans</p>
-            <p class="left-a" id="main-text1">Postdoctoral research associate in Network Medicine.</p>
-            <p class="left-a" id="main-text2"> I use networks in a creative way to improve medicine.</p>        
+        <div class="columns is-vcentered">
+            <div class="column is-8">
+                <p id="title-text">Joaquim Aguirre-Plans</p>
+                <br>
+                <p id="main-text1">Postdoc. Bioinformatician. Data analyst.</p>
+                <p id="main-text1"> I use <b>networks</b> in a creative way to improve <b>medicine</b>.</p>            
+            </div>
+            <div class="column">
+                <table>
+                    <tr>
+                        <td class="icon_symbol"><i class="fa-solid fa-at"></i></td>
+                        <td>&nbsp;&nbsp;</td>
+                        <td class="links"><a href="mailto:quim.aguirre@gmail.com">email</a></td>
+                    </tr>
+                    <tr>
+                        <td class="icon_symbol"><i class="fa-brands fa-github"></i></td>
+                        <td>&nbsp;&nbsp;</td>
+                        <td class="links"><a href="https://github.com/quimaguirre" target="_blank">github</a></td>
+                    </tr>
+                    <tr>
+                        <td class="icon_symbol"><i class="fa-brands fa-linkedin"></i></td>
+                        <td>&nbsp;&nbsp;</td>
+                        <td class="links"><a href="https://www.linkedin.com/in/quimaguirre/" target="_blank">linkedin</a></td>
+                    </tr>
+                    <tr>
+                        <td class="icon_symbol"><i class="fa fa-twitter"></i></td>
+                        <td>&nbsp;&nbsp;</td>
+                        <td class="links"><a href="https://twitter.com/quimaguirre" target="_blank">twitter</a></td>
+                    </tr>
+                </table>
+            </div>
         </div>
+        <ul class="links">
+            <li><a href="files/AguirrePlans_Joaquim.pdf" target="_blank"> cv</a> </li>
+            <li><a href="https://scholar.google.com/citations?user=9Oxu-5wAAAAJ&hl" target="_blank">publications</a></li>
+        </ul>
     </section>
     
     <section class="section">
@@ -57,6 +107,9 @@
                     Boston - <i class="fa-solid fa-location-dot"></i> - Barcelona
                 </p>
             </div>
+            <p>
+                Web inspired by <strong><a href="https://david.masponte.com/" target="_blank">david.masponte.com</a></strong> and powered by <strong><a href="https://bulma.io/" target="_blank">Bulma</a></strong>.    
+            </p>
         </div>
     </section>
 </body>
