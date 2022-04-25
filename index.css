@@ -88,3 +88,22 @@ a {
 
 }
 
+.about_timeline {
+    padding-left: 20%;
+    padding-right: 20%;
+ }
+}
+
+@media only screen and (max-width: 950px) {
+    .about_timeline {
+       padding-left: 10%;
+       padding-right: 10%;
+    }
+ }
+ 
+ @media only screen and (max-width: 600px) {
+    .about_timeline {
+       padding-left: 0;
+       padding-right: 0;
+    }
+ }
