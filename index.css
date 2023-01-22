@@ -124,6 +124,10 @@ a {
     min-height: 3.25rem;
 }
 
+footer a{
+    color: #fff;
+}
+
 .navbar {
     width: 100%;
 }
